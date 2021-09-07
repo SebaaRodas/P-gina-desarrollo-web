@@ -1,0 +1,54 @@
+
+$azul:blue;
+$amarillo:yellow;
+$rojo:red;
+$blanco:white;
+
+
+.nav {
+	background-color: $amarillo;
+}
+
+.pie {
+	background-image: linear-gradient(to bottom, $rojo , $amarillo);
+}
+
+
+
+
+.textos, h1{
+	text-align: center;
+}
+
+.textos--color {
+	@extend .textos;
+	color:$blanco;
+}
+
+@mixin sizes($left, $right){
+	margin-right:$right;
+	margin-left:$left;
+}
+.separar{
+	@include sizes(15px, 10px);
+}
+
+$fondo: contacto;
+body {
+  @if $fondo == index {
+    background-color: $azul;
+  } @else if $fondo == bebidas {
+    background-color: $rojo;
+  } @else if $fondo == pedido {
+    background-color: green;
+  } @else {
+    background-color: lightblue;
+  }
+}
+.margenesFotos {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.centrar {
+	margin-left: 47%;
+}

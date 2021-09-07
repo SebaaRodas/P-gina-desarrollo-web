@@ -1,0 +1,25 @@
+.nav {
+  background-color: yellow; }
+
+.pie {
+  background-image: linear-gradient(to bottom, red, yellow); }
+
+.textos, .textos--color, h1 {
+  text-align: center; }
+
+.textos--color {
+  color: white; }
+
+.separar {
+  margin-right: 10px;
+  margin-left: 15px; }
+
+body {
+  background-color: lightblue; }
+
+.margenesFotos {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.centrar {
+  margin-left: 47%; }
