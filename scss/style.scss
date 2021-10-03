@@ -52,15 +52,8 @@ section{
 	margin-left: 35%;
 } 
 
-$fondo: contacto;
 body {
-  @if $fondo == index {
-    background-color: $azul;
-  } @else if $fondo == bebidas {
-    background-color: $rojo;
-  } @else if $fondo == pedido {
-    background-color: green;
-  } @else {
+  {
     background-color: #EDFE90;
   }
 }
