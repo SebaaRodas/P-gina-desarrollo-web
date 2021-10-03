@@ -8,6 +8,7 @@
 	<title> Servicio de Delivery - Contacto</title>
 	<!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/animate.css">
 	<!-- Link con css -->
 	<link rel="stylesheet" href="../css/estilo.css"> 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,27 +47,61 @@
       	</div><br>
 		<!-- Cierre del Encabezado -->
 		<!-- Contenido -->
-		<section>
-			<form action="#">
-				<label for="nombre">Ingrese su Nombre: 
-					<input type="text" name="nombre">
-				</label><br><br>
-				<label for="direccion">Ingrese su Direccion: 
-					<input type="text" name="direccion">
-				</label><br><br>
-				<select name="pago" id="tipoPago">
-					<option value="Pago">Seleccione tipo de pago</option>
-					<option value="Efectivo">Efectivo</option>
-					<option value="Transferencia">Transferencia Bancaria</option>
-					<option value="Tarjeta">Tarjeta de credito</option>
-				</select><br><br>
-				<div>Acepta términos y condiciones
-				<input type="checkbox" name="acepta" value="1">
-				</div><br>
-				<input type="submit" value="ENVIAR" class="separar">
-				<input type="reset" value="LIMPIAR" class="separar"><br>
-			</form><br>
-		</section>
+		<div class="row wow fadeInRight">
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<img src="../multimedia/imagenes/motomandados.jpg" alt="motomandado" class="margenM img-fluid"><br><br>
+			</div>
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<h2>Horarios de Atención</h2>
+				<table border="1" cellpadding="10">
+            <tr>
+              <th>Dia</th>
+              <th>Horario</th>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>De 22hs a 02hs</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>De 22hs a 04hs</td>
+            </tr>
+            <tr>
+              <td>Sábados</td>
+              <td>De 22hs a 05hs</td>
+            </tr>
+            <tr>
+              <td>Domingos</td>
+              <td>De 22hs a 02hs</td>
+            </tr>
+         </table><br>
+			</div><br>
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<h2>Costos de Envíos</h2>
+				<table border="1" cellpadding="10">
+            <tr>
+              <th>Envíos</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>Menos de 1 km de distancia</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td>Mas de 1 km de distancia</td>
+              <td>$70</td>
+            </tr>
+            <tr>
+              <td>Mas de 2 km de distancia</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>Mas de 3 km de distancia	</td>
+              <td>$150</td>
+            </tr>
+          </table><br>
+			</div>
+		</div><br>
 		<!-- Cierre del Contenido -->
 		<!-- Pie -->
     <div class="row pie">
@@ -78,13 +113,21 @@
         <h3 class="textos--color">REDES SOCIALES</h3>
       </div>
     </div>
+    <p class="centrar wow fadeInLeft">
+     Copyright 2021 &#9400; Yau'Unito.
+     Autor: Rodas Sebastián.
+    </p> 
 		<!-- Cierre del Pie -->
-
+	</div>
 		<!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-	</div>
+    <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+	
 </body>
 </html>

@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description=" content="Servicio de delivery destinado a la venta minorista de bebidas y snack.">
-  	<meta name="keywords" content="comprar, mani, papas fritas, pedir">
-	<title> Servicio de Delivery </title>
+  	<meta name="keywords" content="snack, comprar, mani, papas fritas, pedir">
+	<title> Servicio de Delivery - Snacks</title>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
 	<!-- Link con css -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,19 +47,78 @@
       	</div>
 		<!-- Cierre del Encabezado -->
 		<!-- Contenido -->
-		<h1 class="texto">Papas fritas</h1>
-		<div class="row">
-			<div class="col-xs-12 col-lg-12 col-md-12">
-				<img src="../multimedia/imagenes/lays.jpeg" alt="papas" class="img-fluid">
+		<h1 class="texto">Papas fritas y Mani</h1>		
+		<button type="button" class="btn btn-secondary centrar" data-toggle="modal" data-target="#papas">
+						  Comprar
+		</button><br>
+
+		<!-- Modal -->
+			<div class="modal fade" id="papas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Papas Fritas y Mani</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					 <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						      	<select name="PyM" id="PyM">
+											<option value="PapasyMani">Seleccione lo que desea comprar</option>
+											<option value="ManiComun">Mani Comun</option>
+											<option value="ManiChoco">Mani Chocolate</option>
+											<option value="Papas">Papa Frita</option><br>
+										</select><br><br>
+						        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+						      </div>
+						      <div class="modal-footer">
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+						        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+						      </div>
+						    </div>
+						  </div>
+						</div><br>		
+		<div class="row wow fadeInUp">
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<img src="../multimedia/imagenes/lays.jpeg" alt="papas" class="img-fluid"><br><br>
+				<table border="1" cellpadding="10">
+            <tr>
+              <th>Papas Fritas</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>250g</td>
+              <td>$150</td>
+            </tr>
+          </table><br>
 			</div>
-		</div>
-		<h1 class="texto">Mani</h1>
-		<div class="row">
-			<div class="col-xs-12 col-lg-12 col-md-12">
-				<img src="../multimedia/imagenes/mani.jpeg" alt="mani" class="img-fluid">
-				<img src="../multimedia/imagenes/maniChoco.jpeg" alt="mani" class="img-fluid">
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<img src="../multimedia/imagenes/mani.jpeg" alt="mani" class="img-fluid"><br><br>
+				<table border="1" cellpadding="10">
+            <tr>
+              <th>Mani</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>Comun con sal</td>
+              <td>$100</td>
+            </tr>
+          </table><br>
 			</div>
-		</div>
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<img src="../multimedia/imagenes/maniChoco.jpeg" alt="mani" class="img-fluid"><br><br>
+				<table border="1" cellpadding="10">
+            <tr>
+              <th>Mani</th>
+              <th>Precio</th>
+            </tr>
+            <tr>
+              <td>Chocolate</td>
+              <td>$120</td>
+            </tr>
+          </table><br>
+			</div>
+		</div><br>
 		<!-- Cierre del Contenido -->
 		<!-- Pie -->
 	    <div class="row pie">
@@ -70,6 +130,10 @@
 	        <h3 class="textos--color">REDES SOCIALES</h3>
 	      </div>
 	    </div>
+	    <p class="centrar wow fadeInLeft">
+     		Copyright 2021 &#9400; Yau'Unito.
+     		Autor: Rodas Sebastián.
+    	</p> 
 		<!-- Cierre del Pie -->
 	</div>
 	
@@ -78,5 +142,9 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
 </body>
 </html>

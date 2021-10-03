@@ -6,6 +6,7 @@
 	<title> Servicio de Delivery - PedidoActual</title>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
 	<!-- Link con css -->
 	<link rel="stylesheet" href="../css/estilo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,52 +45,28 @@
     </div><br>
 	<!-- Cierre del Encabezado -->
 	<!-- Contenido -->
-	<p>Lista de Pedidos</p>
-	<div class="row">
-		<div class="col-xs-12 col-lg-12 col-md-12">
-			<table border="1" cellpadding="10">
-			<!-- inicio primer fila -->
-			<tr>
-				<!-- columnas -->
-				<th>Cervezas</th>
-				<th>Precio</th>
-				<th>Cantidad</th>
-				<th>Total</th>
-				<!-- cierre columnas -->
-			</tr>
-			<!-- cierre primer fila -->
-			<tr>
-				<td>Corona</td>
-				<td>200</td>
-				<td>2</td>
-				<td>400</td>
-			</tr>
-			<tr>
-				<td>Heineken</td>
-				<td>210</td>
-				<td>3</td>
-				<td>630</td>
-			</tr>
-			<tr>
-				<td>Brahma</td>
-				<td>170</td>
-				<td>2</td>
-				<td>340</td>
-			</tr>
-			<tr>
-				<td>Quilmes</td>
-				<td>170</td>
-				<td>1</td>
-				<td>170</td>
-			</tr>
-		</table>
-		<form action="#"><br>
-			<input type="submit" value="ACEPTAR" class="separar">
-			<input type="reset" value="ELIMINAR" class="separar">
-		</form><br>
-		</div>
-	</div>
-	<!-- Cierre del Contenido -->
+		<section>
+			<form action="#">
+				<label for="nombre">Ingrese su Nombre: 
+					<input type="text" name="nombre">
+				</label><br><br>
+				<label for="direccion">Ingrese su Direccion: 
+					<input type="text" name="direccion">
+				</label><br><br>
+				<select name="pago" id="tipoPago">
+					<option value="Pago">Seleccione tipo de pago</option>
+					<option value="Efectivo">Efectivo</option>
+					<option value="Transferencia">Transferencia Bancaria</option>
+					<option value="Tarjeta">Tarjeta de credito</option>
+				</select><br><br>
+				<div>Acepta términos y condiciones
+				<input type="checkbox" name="acepta" value="1">
+				</div><br>
+				<input type="submit" value="ENVIAR" class="separar">
+				<input type="reset" value="LIMPIAR" class="separar"><br>
+			</form><br>
+		</section>
+		<!-- Cierre del Contenido -->
 	<!-- Pie -->
     <div class="row pie">
       <div class="col-lg-6 col-xs-12 col-md-6 textos">
@@ -100,6 +77,10 @@
         <h3 class="textos--color">REDES SOCIALES</h3>
       </div>
     </div>
+    <p class="centrar wow fadeInLeft">
+     Copyright 2021 &#9400; Yau'Unito.
+     Autor: Rodas Sebastián.
+    </p> 
 	<!-- Cierre del Pie -->
 	</div>
 	<!-- Optional JavaScript; choose one of the two! -->
@@ -107,5 +88,9 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
 </body>
 </html>

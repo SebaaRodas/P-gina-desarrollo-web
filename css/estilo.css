@@ -4,7 +4,16 @@
 .pie {
   background-image: linear-gradient(to bottom, red, yellow); }
 
-.textos, .textos--color, h1 {
+.btn-primary a {
+  color: white; }
+
+td {
+  align: center; }
+
+table {
+  margin-left: 25%; }
+
+.textos, .textos--color, h1, h2 {
   text-align: center; }
 
 .textos--color {
@@ -14,12 +23,20 @@
   margin-right: 10px;
   margin-left: 15px; }
 
+.margenM {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px; }
+
+section {
+  margin-left: 35%; }
+
 body {
-  background-color: lightblue; }
+  background-color: #EDFE90; }
 
 .margenesFotos {
   margin-top: 20px;
   margin-bottom: 20px; }
 
 .centrar {
-  margin-left: 47%; }
+  margin-left: 45%; }

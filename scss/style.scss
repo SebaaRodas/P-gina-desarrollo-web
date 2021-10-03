@@ -13,10 +13,19 @@ $blanco:white;
 	background-image: linear-gradient(to bottom, $rojo , $amarillo);
 }
 
+.btn-primary a {
+	color: white;
+}
 
+td {
+	align: center;
+}
 
+table {
+	margin-left: 25%;
+}
 
-.textos, h1{
+.textos, h1, h2{
 	text-align: center;
 }
 
@@ -33,6 +42,16 @@ $blanco:white;
 	@include sizes(15px, 10px);
 }
 
+.margenM {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+
+section{
+	margin-left: 35%;
+} 
+
 $fondo: contacto;
 body {
   @if $fondo == index {
@@ -42,7 +61,7 @@ body {
   } @else if $fondo == pedido {
     background-color: green;
   } @else {
-    background-color: lightblue;
+    background-color: #EDFE90;
   }
 }
 .margenesFotos {
@@ -50,5 +69,5 @@ body {
 	margin-bottom: 20px;
 }
 .centrar {
-	margin-left: 47%;
+	margin-left: 45%;
 }

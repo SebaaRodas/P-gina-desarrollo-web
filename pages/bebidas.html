@@ -8,6 +8,7 @@
 	<title> Servicio de Delivery - Bebidas </title>
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
 	<!-- Link con css -->
 	<link rel="stylesheet" href="../css/estilo.css"> 
 </head>
@@ -44,50 +45,498 @@
 		<!-- Cierre del Encabezado -->
 		<!-- Contenido -->
 		<h1>Cervezas</h1>
-		<div class="row">
+		<div class="row wow fadeInLeft">
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Amstel</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Brahma</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Corona</button>
+				<!-- AMSTEL -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#exampleModal">
+				  Amstel 
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Amstel</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Amstel" id="Amstel">
+									<option value="Amstel">Seleccione la cerveza que desea</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>	
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<!-- BRAHMA -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#brahma">
+				  Brahma
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="brahma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Brahma</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Brahma" id="Brahma">
+									<option value="Brahma">Seleccione la cerveza que desea</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-xs-12 col-lg-4 col-md-4">	
-				<button type="button" class="btn btn-primary btn-lg btn-block">Heineken</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Miller</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Patagonia</button>
-			</div>
-			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Quilmes</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Sol</button>
-				<button type="button" class="btn btn-primary btn-lg btn-block">Stella</button>
+				<!-- CORONA -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#corona">
+				  Corona
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="corona" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Corona</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Corona" id="Corona">
+									<option value="Corona">Seleccione la cerveza que desea</option>
+									<option value="Botellita 330 ml">Botellita 330 ml</option>
+									<option value="Botella 730 ml">Botella 730 ml</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
+		<div class="row wow fadeInLeft">		
+			<div class="col-xs-12 col-lg-4 col-md-4">	
+				<!-- HEINEKEN -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#heineken">
+				  Heineken
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="heineken" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Heineken</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Heineken" id="Heineken">
+									<option value="Heineken">Seleccione la cerveza que desea</option>
+									<option value="Botellita 330 ml">Botellita 330 ml</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>	
+			<div class="col-xs-12 col-lg-4 col-md-4">	
+				<!-- MILLER -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#miller">
+				  Miller
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="miller" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Miller</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Miller" id="Miller">
+									<option value="Miller">Seleccione la cerveza que desea</option>
+									<option value="Botellita 330 ml">Botellita 330 ml</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-4 col-md-4">		
+				<!-- PATAGONIA -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#patagonia">
+				  Patagonia
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="patagonia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Patagonia</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Patagonia" id="Patagonia">
+									<option value="Patagonia">Seleccione la cerveza que desea</option>
+									<option value="Weisse">Weisse</option>
+									<option value="24.7">24.7</option>
+									<option value="Kune">Kune</option>
+									<option value="Amber">Amber Lager</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>	
+		<div class="row wow fadeInLeft">		
+			<div class="col-xs-12 col-lg-4 col-md-4">
+				<!-- QUILMES -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#quilmes">
+				  Quilmes
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="quilmes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Quilmes</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Quilmes" id="Quilmes">
+									<option value="Quilmes">Seleccione la cerveza que desea</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-4 col-md-4">	
+				<!-- SOL -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#sol">
+				  Sol
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="sol" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Sol</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Sol" id="Sol">
+									<option value="Sol">Seleccione la cerveza que desea</option>
+									<option value="Botellita 330 ml">Botellita 330 ml</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-lg-4 col-md-4">	
+				<!-- STELLA ARTOIS -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#stella">
+				  Stella Artois
+				</button><br>
+
+				<!-- Modal -->
+				<div class="modal fade" id="stella" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Stella Artois</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="Stella Artois" id="Stella">
+									<option value="Stella">Seleccione la cerveza que desea</option>
+									<option value="Botellita 330 ml">Botellita 330 ml</option>
+									<option value="Lata 473 ml">Lata 473 ml</option>
+									<option value="Botella 1L">Botella 1L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>	
+		</div>
 		<h1>Fernet y Gaseosas</h1>
-		<div class="row">
+		<div class="row wow fadeInRight">
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Branca</button>
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#branca">
+				  Branca
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="branca" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Branca</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="branca" id="branca">
+									<option value="branca">Seleccione el fernet que desea</option>
+									<option value="450 ml">Chico 450 ml</option>
+									<option value="750 ml">Mediano 750 ml</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Coca Cola</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#coca">
+				  Coca Cola
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="coca" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Coca Cola</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="coca" id="coca">
+									<option value="coca">Seleccione la coca que desea</option>
+									<option value="vidrio">Vidrio 1,5L</option>
+									<option value="desc2">Descartable 2,25L</option>
+									<option value="desc3">Descartable 3L</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Manaos</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#manaos">
+				  Manaos
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="manaos" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Manaos</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<select name="coca" id="coca">
+									<option value="coca">Seleccione la manaos que desea</option>
+									<option value="ManaosN">Naranja</option>
+									<option value="ManaosC">Cola</option>
+									<option value="ManaosP">Pomelo</option><br>
+								</select><br><br>
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 		</div>
 		<h1>Vinos</h1>
-		<div class="row">
+		<div class="row wow fadeInUp">
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Alma Mora</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#mora">
+				  Alma Mora
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="mora" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Alma Mora</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Viñas de Alvear</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#alvear">
+				  Coca Cola
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="alvear" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Viñas de Alvear</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
 			<div class="col-xs-12 col-lg-4 col-md-4">
-				<button type="button" class="btn btn-primary btn-lg btn-block">Viñas de Balbo</button>
+				<button type="button" class="btn btn-primary btn-lg btn-block" data-toggle="modal" data-target="#balbo">
+				  Viñas de Balbo
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="balbo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="staticBackdropLabel">Viñas de Balbo</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <input class="form-control form-control-lg" type="text" placeholder="Ingrese la cantidad"><br>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-primary"><a href="Pedido.html">Aceptar</a></button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</div>
-		</div>		
+		</div><br>
 		<!-- Cierre del Contenido -->
 		<!-- Pie -->
-    <div class="row pie">
+    <div class="row pie wow fadeInLeft">
       <div class="col-lg-6 col-xs-12 col-md-6 textos">
         <h3 class="textos--color">DELIVERY</h3>
         <p>Ofrecemos un servicio de delivery de bebidas y snack para la ciudad de Clorinda - Formosa.</p>
@@ -96,6 +545,10 @@
         <h3 class="textos--color">REDES SOCIALES</h3>
       </div>
     </div>
+    <p class="centrar wow fadeInLeft">
+     Copyright 2021 &#9400; Yau'Unito.
+     Autor: Rodas Sebastián.
+    </p> 
 		<!-- Cierre del Pie -->
 	</div>
 
@@ -104,5 +557,9 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="../js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
 </body>
 </html>
