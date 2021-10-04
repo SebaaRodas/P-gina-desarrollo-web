@@ -34,6 +34,9 @@ section {
 body {
   background-color: #EDFE90; }
 
+.moverIzq {
+  margin-left: 30%; }
+
 .margenesFotos {
   margin-top: 20px;
   margin-bottom: 20px; }
