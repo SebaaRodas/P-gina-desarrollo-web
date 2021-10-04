@@ -29,7 +29,7 @@ table {
   margin-bottom: 10px; }
 
 section {
-  margin-left: 35%; }
+  margin-left: 40%; }
 
 body {
   background-color: #EDFE90; }
@@ -43,3 +43,11 @@ body {
 
 .centrar {
   margin-left: 45%; }
+
+@media screen and (min-width: 321px) and (max-width: 768px) {
+  .centrar {
+    margin-left: 40%; }
+  .centrarP {
+    margin-left: 10%; }
+  section {
+    margin-left: 20%; } }
